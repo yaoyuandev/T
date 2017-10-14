@@ -3,6 +3,49 @@
 \chapter{图论}
 	\section{最大团}
 		\lstinputlisting{code/graph_theory/max_cluster.cc}
+		\section{图的遍历和连通性}
+        \subsection{割点和桥}
+            \lstinputlisting{code/gedian.cc}
+        \subsection{双连通分量}
+            \lstinputlisting{code/shuangliantong.cc}
+        \subsection{强连通分量}
+            \lstinputlisting{code/scc.cc}
+        \subsection{拓扑排序}
+            \subsubsection{BFS}
+            \subsubsection{判断是否成环}
+            拓扑排序形成的ans的sz != n 则成环
+        \subsection{2SAT}
+            \lstinputlisting{code/2sat.cc}
+    \section{路径}
+        \subsection{非递归欧拉回路}
+            \lstinputlisting{code/eulerpath.cc}
+    \section{匹配}
+        \subsection{二分图最大匹配}
+            最小点覆盖的点数 = 二分图最大匹配 \\
+            最大独立集的点数 = 总点数 - 二分图最大匹配
+        \lstinputlisting{code/erfentu.cc}
+        \subsection{二分图最优匹配}
+            \lstinputlisting{code/km.cc}
+    \section{树}
+        \subsection{prim}
+            \lstinputlisting{code/prim.cc}
+        \subsection{曼哈顿最小距离生成树}
+            \lstinputlisting{code/manhadun.cc}
+    \section{网络流}
+        \subsection{最大流 Dinic}
+            \lstinputlisting{code/dinic.cc}
+        \subsection{最大流 ISAP}
+            \lstinputlisting{code/isap.cc}
+        \subsection{费用流}
+            \lstinputlisting{code/mcmf.cc}
+        \subsection{无源无汇有容量下界网络的可行流}
+            \lstinputlisting{code/yy/wuyuan.cc}
+    \section{其他}
+        \subsection{层次遍历}
+            每次记录队列当前的sz 然后在一次循环中只出队sz次
+        \subsection{图解序列}
+            图解序列：一系列非负整数可以构成一个简单图的度序列 \\
+            Havel定理：对于n>1,长度为n的整数序列是图解序列当且仅当d'是图解序列，d'是的删除d中最大元素Δ并将紧跟的Δ个元素减1后序列	
 \end{document}
 
 

@@ -1,0 +1,30 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\chapter{数论}
+	\section{指数降幂公式}
+		$$A^x \equiv A^{x \bmod {\phi(p)} + \phi(p)} \pmod{p} (x  \geq{\phi(p))}$$
+	\section{威尔逊定理}
+		$$(p-1)! \equiv -1 \pmod{p} $$
+	\section{费马小定理}
+		$$ a^p \equiv a \pmod{p} $$
+	\section{欧拉定理}
+		$$ a^\phi(n) \equiv 1 \pmod{n} $$
+    \section{质数表}
+            \lstinputlisting{code/prime.cc}
+    \section{素数函数}
+            \lstinputlisting{code/primefunc.cc}
+    \section{欧拉函数}
+    		\subsection{递推求}	
+           \lstinputlisting{code/euler.cc}
+         \subsection{单个求}
+         		\lstinputlisting{code/number_theory/single_euler.cc}
+     \section{莫比乌斯函数}
+            \lstinputlisting{code/mobi.cc}
+    \section{逆元}
+    		\subsection{递推求}
+    			\lstinputlisting{code/number_theory/single_inv.cc}
+    		\subsection{单个求}
+    			用费马小定理
+\end{document}
+
+

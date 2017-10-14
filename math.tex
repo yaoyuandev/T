@@ -1,0 +1,32 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\chapter{数学}
+\section{矩阵}
+    \subsection{矩阵类}
+        \lstinputlisting{code/mat.cc}
+    \subsection{高斯消元}
+        \lstinputlisting{code/gauss.cc}
+\section{整除与剩余}
+    \subsection{扩展欧几里得 逆元}
+        \lstinputlisting{code/extgcd.cc}
+    \subsection{中国剩余定理}
+        \lstinputlisting{code/china.cc}
+\section{数值计算}
+\section{其他}
+    \subsection{lucas定理}
+        \lstinputlisting{code/lucas.cc}
+    \subsection{递推求组合数}
+        \lstinputlisting{code/dituic.cc}
+    \subsection{单个求组合数}
+        \lstinputlisting{code/single_c.cc}
+    \subsection{威佐夫博弈}
+        \lstinputlisting{code/wzf.cc}
+    \subsection{FWT}
+        \lstinputlisting{code/fwt.cc}
+    \subsection{FFT}
+        \lstinputlisting{code/FFT.cpp}
+    \subsection{hell方程}
+        $ x^2-ny^2 = 1$
+        $ x[i+1] = x[1]*x[i] + n*y[1]*y[i]; $
+        $ y[i+1] = x[1]*y[i] + y[1]*x[i] $
+\end{document}
