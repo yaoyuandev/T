@@ -2,6 +2,8 @@
 % !TeX encoding = UTF-8
 \documentclass{report}
 \usepackage[default]{sourcecodepro}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
 \usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{xcolor}
@@ -11,7 +13,7 @@
 \usepackage[ampersand]{easylist}
 \usepackage{fontspec}
 \setCJKmainfont{微软雅黑}
-\setmonofont{sourcecodepro}
+\setmonofont{Consolas}
 \lstset{
     language=C++,
 	basicstyle=\ttfamily,
@@ -32,6 +34,7 @@
 王泽宸 \\ 
 \texttt{解题核心}
 }
+
 \maketitle
 \tableofcontents
 \newpage
@@ -44,11 +47,8 @@
 \subfile{string.tex}
 \subfile{others.tex}
 \subfile{builtin.tex}
-\begin{thebibliography}{9}
-\bibitem{交大模板} 
-余勇. 
-\textit{ACM国际大学生程序设计竞赛:算法与实现}. 
-北京, 清华大学出版社, 2012
-\end{thebibliography}
+\subfile{java.tex}
+\subfile{python.tex}
+\subfile{warning.tex}
 \end{document}
 
